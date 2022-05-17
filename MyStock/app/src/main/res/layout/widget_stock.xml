@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_centerInParent="true"
+    android:padding="8dp"
+    tools:ignore="MissingDefaultResource"
+    android:id="@+id/widget_layout">
+
+    <TextView
+        android:id="@+id/stock_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Title"/>
+
+    <ImageView
+        android:id="@+id/character_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/common"
+        android:layout_below="@id/stock_title_text"/>
+
+    <TextView
+        android:id="@+id/now_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/character_image"
+        android:layout_centerVertical="true"
+        android:text="10000"/>
+
+    <ImageView
+        android:id="@+id/stock_arrow_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/common_arrow"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/now_cost"/>
+
+</RelativeLayout>

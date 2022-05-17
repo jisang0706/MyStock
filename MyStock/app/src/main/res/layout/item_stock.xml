@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp">
+
+    <TextView
+        android:id="@+id/stock_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Title"/>
+
+    <TextView
+        android:id="@+id/now_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/stock_arrow_image"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="20000"/>
+
+    <ImageView
+        android:id="@+id/stock_arrow_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_toLeftOf="@+id/var_cost"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_arrow"/>
+
+    <TextView
+        android:id="@+id/var_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="14dp"
+        android:text="10000"/>
+
+    <TextView
+        android:id="@+id/var_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/var_cost"
+        android:textSize="14dp"
+        android:text="100%"/>
+
+</RelativeLayout>
